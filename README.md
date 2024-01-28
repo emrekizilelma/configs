@@ -1,2 +1,2 @@
 # vim-config
-My custom Vim configurations.
+My custom Linux configuration files.
