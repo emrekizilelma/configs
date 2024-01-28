@@ -1,2 +1,2 @@
 # config
-My custom Linux configuration files.
+- My custom Linux configuration files.
