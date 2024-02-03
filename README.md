@@ -1,2 +1,2 @@
 # config
-- My custom Linux configuration files.
+- My Personel Fedora Linux Post Installation Configuration Files.

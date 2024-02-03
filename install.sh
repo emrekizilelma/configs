@@ -1,4 +1,5 @@
 #!/bin/bash
+
 show_menu()
 {
   echo "*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*"
@@ -8,6 +9,7 @@ show_menu()
   echo "2.) ZSH"
   echo "3.) NvimChad"
   echo "4.) All"
+  echo "*-*-*-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 }
 
 install_brave()
@@ -23,17 +25,21 @@ install_brave()
 
 install_zsh()
 {
-  echo "TEST ZSH"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
 
 install_nvimChad()
 {
-  echo "TEST nvimChad"
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim  
 }
 
 install_all()
 {
-  echo "TEST all"
+  echo "Installing..."
+  install_brave
+  install_zsh
+  install_nvimChad
+  echo "Installed All Programs!"
 }
 
 show_menu
