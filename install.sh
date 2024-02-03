@@ -14,13 +14,13 @@ show_menu()
 
 install_brave()
 {
-  sudo dnf install dnf-plugins-core
+  sudo dnf install dnf-plugins-core -y
 
-  sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+  sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo -y
 
-  sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+  sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc -y
 
-  sudo dnf install brave-browser
+  sudo dnf install brave-browser -y
 }
 
 install_zsh()
