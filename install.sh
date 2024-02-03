@@ -31,7 +31,8 @@ install_zsh()
 
 install_nvimChad()
 {
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim  
+  sudo dnf install neovim -y
+  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim  
 }
 
 install_all()
