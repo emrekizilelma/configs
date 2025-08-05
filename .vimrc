@@ -1,7 +1,7 @@
+set nocompatible
 set number
-set tabstop=2
-inoremap { {}<Esc>ha
-inoremap ( ()<Esc>ha
-inoremap [ []<Esc>ha
-inoremap " ""<Esc>ha
-inoremap ' ''<Esc>ha
+set tabstop=4
+set shiftwidth=4
+set expandtab
+syntax on
+
