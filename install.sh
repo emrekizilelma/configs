@@ -8,7 +8,8 @@ show_menu()
   echo "1.) Brave Browser"
   echo "2.) ZSH"
   echo "3.) NvimChad"
-  echo "4.) All"
+  echo "4.) Rpmfusion"
+  echo "5.) All"
   echo "*-*-*-*-*-**-*-*-*-*-*-*-*-*-*-*-*-*-*-*"
 }
 
@@ -35,12 +36,18 @@ install_nvimChad()
   git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim  
 }
 
+install_rpmfusion()
+{
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+}
+
 install_all()
 {
   echo "Installing..."
   install_brave
   install_zsh
   install_nvimChad
+    install_rpmfusion
   echo "Installed All Programs!"
 }
 
@@ -66,5 +73,11 @@ fi
 
 if [ $choose == 4 ]
 then
-  install_all
+  install_rpmfusion
 fi
+
+if [ $choose == 5 ]
+then
+    install_all
+fi
+    
