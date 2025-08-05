@@ -38,9 +38,9 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 install_all()
 {
   echo "Installing..."
-  install_brave
-  install_zsh
-  install_nvimChad
+    install_brave
+    install_zsh
+    install_nvimChad
     install_rpmfusion
   echo "Installed All Programs!"
 }
@@ -52,22 +52,22 @@ read choose
 
 if [ $choose == 1 ]
 then
-  install_brave
+    install_brave
 fi
 
 if [ $choose == 2 ]
 then
-  install_zsh
+    install_zsh
 fi 
 
 if [ $choose == 3 ]
 then
-  install_nvimChad
+    install_nvimChad
 fi 
 
 if [ $choose == 4 ]
 then
-  install_rpmfusion
+    install_rpmfusion
 fi
 
 if [ $choose == 5 ]
